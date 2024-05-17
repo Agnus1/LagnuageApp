@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.LangApp.Alter"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/header"
+        style="@style/HeaderBox">
+        <ImageView
+            android:id="@+id/navArrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/arrow"
+            android:background="@color/deep_blue"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            style="@style/HeaderText"
+            android:layout_gravity="center"
+            android:text="Signup"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/header"
+        android:id="@+id/heading"
+        android:text="Choose a Password"
+        style="@style/LoginHeader"
+        android:layout_marginBottom="35dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_below="@id/heading"
+        style="@style/TextInputLabel"
+        android:text="Password"
+        />
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/passwordText"
+        android:layout_centerHorizontal="true"
+        style="@style/TextInput"
+        android:hint="Password"
+        />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/passwordTextAgain"
+        android:layout_below="@id/passwordInput"
+        style="@style/TextInputLabel"
+        android:text="Confirm Password"
+        />
+    <EditText
+        android:id="@+id/passwordInputAgain"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/passwordTextAgain"
+        android:layout_centerHorizontal="true"
+        style="@style/TextInput"
+        android:hint="Confirm Password"
+        />
+    <Button
+        android:layout_marginTop="150dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mainButton"
+        android:layout_below="@+id/passwordInputAgain"
+        android:background="@drawable/rounded_button"
+        android:text="Signup"
+        style="@style/ButtonDefault"
+        />
+</RelativeLayout>

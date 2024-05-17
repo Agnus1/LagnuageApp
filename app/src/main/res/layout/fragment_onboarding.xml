@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Theme.LangApp.Alter"
+    tools:context=".OnboardingFragment">
+
+    <ImageView
+        style="@style/Theme.LangApp.Alter"
+        android:id="@+id/onboardingPic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/onboarding_1" />
+
+    <ImageView
+        style="@style/Theme.LangApp.Alter"
+        android:layout_marginTop="80dp"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:id="@+id/dots"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/onboardingPic"
+        android:src="@drawable/slider_1"
+        />
+    <TextView
+        android:id="@+id/headingText"
+        style="@style/TextSmallHeading"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dots"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="@string/onboarding_heading_1"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_marginTop="7dp"
+        style="@style/TextSmallDescription"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headingText"
+        android:layout_centerHorizontal="true"
+        android:text="@string/onboarding_description_1"
+        android:textAlignment="center"/>
+    
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mainButton"
+        android:layout_below="@+id/descriptionText"
+        android:background="@drawable/rounded_button"
+        android:text="@string/onboarding_button_1"
+        style="@style/ButtonDefault"
+        />
+
+    <TextView
+        android:id="@+id/smallButton"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/onboarding_skip_button"
+        android:textAlignment="center"
+        style="@style/ButtonSmall"
+        />
+</RelativeLayout>

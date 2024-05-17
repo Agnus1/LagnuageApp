@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.LangApp.Alter"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/header"
+        style="@style/HeaderBox">
+        <ImageView
+            android:id="@+id/navArrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/arrow"
+            android:background="@color/deep_blue"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            style="@style/HeaderText"
+            android:layout_gravity="center"
+            android:text="Signup"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/header"
+        android:id="@+id/heading"
+        android:text="Create an Account"
+        style="@style/LoginHeader"
+        android:layout_marginBottom="35dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/firstText"
+        android:layout_below="@id/heading"
+        style="@style/TextInputLabel"
+        android:text="First Name"
+        />
+    <EditText
+        android:id="@+id/firstInput"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/firstText"
+        android:layout_centerHorizontal="true"
+        style="@style/TextInput"
+        android:hint="Your First Name"
+        />
+
+    <TextView
+        android:id="@+id/lastText"
+        android:layout_below="@id/firstInput"
+        style="@style/TextInputLabel"
+        android:text="Last Name"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:id="@+id/lastInput"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/lastText"
+        android:layout_centerHorizontal="true"
+        style="@style/TextInput"
+        android:hint="Your Last Name"
+        />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_below="@id/lastInput"
+        style="@style/TextInputLabel"
+        android:text="Last Name"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/emailText"
+        android:layout_centerHorizontal="true"
+        style="@style/TextInput"
+        android:hint="Your Last Name"
+        android:layout_marginBottom="15dp"
+        />
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mainButton"
+        android:layout_below="@+id/emailInput"
+        android:background="@drawable/rounded_button"
+        android:text="Continue"
+        style="@style/ButtonDefault"
+        />
+</RelativeLayout>

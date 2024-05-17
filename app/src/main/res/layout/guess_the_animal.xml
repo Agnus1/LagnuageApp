@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.LangApp.Alter">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/header"
+        style="@style/HeaderBox"
+        android:layout_marginBottom="10dp"
+        >
+        <ImageView
+            android:id="@+id/navArrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/arrow"
+            android:background="@color/deep_blue"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            style="@style/HeaderText"
+            android:paddingLeft="20dp"
+            android:textAlignment="textStart"
+            android:text="Guess the animal"
+            >
+        </TextView>
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="5dp"
+        android:elevation="10dp"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/card"
+        >
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/enot"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/inputText"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/question"
+            style="@style/TextInputLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Write who is on image"
+            android:layout_marginBottom="20dp"
+            />
+        <EditText
+            app:layout_constraintTop_toBottomOf="@+id/question"
+            android:id="@+id/passwordInput"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            style="@style/TextInput"
+            android:layout_marginBottom="15dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mainButton"
+        android:layout_below="@+id/inputText"
+        android:background="@drawable/rounded_button"
+        android:text="Check"
+        style="@style/ButtonDefault"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.LangApp" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="background">@color/deep_blue</item>
+        <item name="fontFamily">@font/fredoka_regular</item>
+    </style>
+</resources>
